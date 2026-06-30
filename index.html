@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shem — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-mark">SA</div>
+      SHEM
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-github" title="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
+      <a href="#contact" class="btn-primary">Hire me</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <svg id="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      <svg id="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn-primary">Hire me</a>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="hero">
+  <img
+    class="hero-bg"
+    src="https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?w=1920&h=1080&fit=crop&auto=format"
+    alt="Abstract architectural structure"
+  />
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Available for projects
+    </div>
+
+    <h1 class="hero-heading">
+      Design that <span class="accent">thinks.</span><br>
+      Code that <span class="accent">ships.</span>
+    </h1>
+
+    <p class="hero-sub">
+      I'm Shem — a front-end engineer and product designer crafting precise,
+      performant digital experiences from concept to deployment.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-cta">
+        View my work
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+      <a href="#contact" class="btn-outline">Get in touch</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue">
+    Scroll
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </a>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <p class="section-eyebrow">About me</p>
+        <h2 class="section-heading">Building things<br>worth using.</h2>
+        <p class="about-body">
+          With 8 years of experience across product engineering and UX design, I bridge the gap
+          between what works beautifully and what works technically. My process starts with users
+          and ends with clean, maintainable code.
+        </p>
+        <p class="about-body">
+          Previously at Stripe, Linear, and two venture-backed startups. Currently taking on
+          selected freelance projects and consulting engagements.
+        </p>
+        <div class="stats">
+          <div>
+            <div class="stat-num">8+</div>
+            <div class="stat-label">Years experience</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div>
+            <div class="stat-num">42</div>
+            <div class="stat-label">Projects shipped</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div>
+            <div class="stat-num">18</div>
+            <div class="stat-label">Happy clients</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-img-wrap reveal-right">
+        <img
+          class="about-img"
+          src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?w=700&h=700&fit=crop&auto=format"
+          alt="Low angle architecture"
+        />
+        <div class="location-badge">
+          <div class="label">Currently in</div>
+          <div class="value">Kumasi, GH</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-eyebrow">Selected work</p>
+        <h2 class="section-heading section-heading--no-margin">Projects I'm proud of.</h2>
+      </div>
+      <span class="projects-count">11 of 42 projects</span>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&auto=format" alt="Pulse Analytics dashboard" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">Web Application</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Pulse Analytics</div>
+          <p class="card-desc">Real-time analytics dashboard built with React and WebSockets. Processes over 2M events per day with sub-100ms latency.</p>
+          <div class="card-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">WebSocket</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NewSKY1" class="link-demo">
+              Live demo
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+            <a href="https://github.com/NewSKY1" class="link-source">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              Source
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal delay-08s">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=500&fit=crop&auto=format" alt="Meridian CMS" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">Full-Stack Platform</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Meridian CMS</div>
+          <p class="card-desc">Headless content management system with a visual page builder, role-based access control, and a GraphQL API layer.</p>
+          <div class="card-tags">
+            <span class="tag">Next.js</span><span class="tag">GraphQL</span><span class="tag">PostgreSQL</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NewSKY1" class="link-demo">Live demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://github.com/NewSKY1" class="link-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal delay-16s">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=500&fit=crop&auto=format" alt="Orbit Design System" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">UI Library</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Orbit Design System</div>
+          <p class="card-desc">Accessible component library with 60+ components, Storybook documentation, and full TypeScript support.</p>
+          <div class="card-tags">
+            <span class="tag">TypeScript</span><span class="tag">Storybook</span><span class="tag">Radix UI</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NewSKY1" class="link-demo">Live demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://github.com/NewSKY1" class="link-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal delay-24s">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=500&fit=crop&auto=format" alt="Cartography Mobile" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">Mobile App</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Cartography Mobile</div>
+          <p class="card-desc">Offline-first GPS tracking app for trail runners. Syncs routes and elevation data when connectivity returns.</p>
+          <div class="card-tags">
+            <span class="tag">React Native</span><span class="tag">SQLite</span><span class="tag">MapBox</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NewSKY1" class="link-demo">Live demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://github.com/NewSKY1" class="link-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal delay-32s">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=800&h=500&fit=crop&auto=format" alt="Verity AI" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">Machine Learning</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Verity AI</div>
+          <p class="card-desc">Document verification pipeline using computer vision to detect alterations and forgeries with 98.4% accuracy.</p>
+          <div class="card-tags">
+            <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">FastAPI</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NewSKY1" class="link-demo">Live demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://github.com/NewSKY1" class="link-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=800&h=500&fit=crop&auto=format" alt="Dispatch Logistics" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">SaaS Product</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Dispatch Logistics</div>
+          <p class="card-desc">Fleet management platform for last-mile delivery companies. Optimises routes across 500+ drivers per city.</p>
+          <div class="card-tags">
+            <span class="tag">Vue.js</span><span class="tag">Django</span><span class="tag">Redis</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/NewSKY1" class="link-demo">Live demo <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://github.com/NewSKY1" class="link-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-img-wrap">
+          <img class="card-img" src="https://images.unsplash.com/photo-1649180573784-bd23dbe5606a?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="QuizGen AI" />
+          <div class="card-img-overlay"></div>
+          <span class="card-category">AI · Web App</span>
+        </div>
+        <div class="card-body">
+         <div class="card-title">QuizGen</div>
+        <p class="card-desc">An AI-powered quiz generation web app built using the Anthropic API. Users input any topic and get instant, structured quiz questions.</p>
+        <div class="card-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Anthropic API</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/NewSKY1" target="_blank" rel="noopener noreferrer" class="link-source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        View on GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="card reveal delay-08s">
+  <div class="card-img-wrap">
+    <img class="card-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop&auto=format" alt="CodeAlpha Frontend" />
+    <div class="card-img-overlay"></div>
+    <span class="card-category">Frontend · Internship</span>
+  </div>
+  <div class="card-body">
+    <div class="card-title">CodeAlpha Frontend Tasks</div>
+    <p class="card-desc">Four polished frontend projects: Minimal Calculator, Image Gallery with lightbox, Portfolio Site, and Music Player with advanced interactions.</p>
+    <div class="card-tags">
+      <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/NewSKY1/CodeAlpha_Frontend" target="_blank" rel="noopener noreferrer" class="link-source">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> View on Github
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="card reveal delay-16s">
+  <div class="card-img-wrap">
+    <img class="card-img" src="https://plus.unsplash.com/premium_photo-1741109190036-cbd11154bc65?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW9iaWxlJTIwbW9uZXklMjBzaW11bGF0b3J8ZW58MHx8MHx8fDA%3D" alt="USSD Mobile Money" />
+    <div class="card-img-overlay"></div>
+    <span class="card-category">C++ · Systems</span>
+  </div>
+  <div class="card-body">
+    <div class="card-title">USSD Mobile Money Simulator</div>
+    <p class="card-desc">Command-line simulation of a USSD-based mobile money system. Features menu navigation, account management, and transaction logic.</p>
+    <div class="card-tags">
+      <span class="tag">C++</span><span class="tag">OOP</span><span class="tag">CLI</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/NewSKY1" target="_blank" rel="noopener noreferrer" class="link-source">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> View on GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="card reveal delay-24s">
+  <div class="card-img-wrap">
+    <img class="card-img" src="https://plus.unsplash.com/premium_photo-1684330691489-2eb2620db612?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Task Flow Management" />
+    <div class="card-img-overlay"></div>
+    <span class="card-category">C++ · Academic</span>
+  </div>
+  <div class="card-body">
+    <div class="card-title">Task Flow Management System</div>
+    <p class="card-desc">Structured task management system built in C++. Features task creation, priority queues, and status tracking with OOP principles.</p>
+    <div class="card-tags">
+      <span class="tag">C++</span><span class="tag">Data Structures</span><span class="tag">OOP</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/NewSKY1" target="_blank" rel="noopener noreferrer" class="link-source">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> View on GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="card reveal delay-32s">
+  <div class="card-img-wrap">
+    <img class="card-img" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvciUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D" alt="Calculator" />
+    <div class="card-img-overlay"></div>
+    <span class="card-category">Internship · Tasks</span>
+  </div>
+  <div class="card-body">
+    <div class="card-title">Responsive Calculator</div>
+    <p class="card-desc">Feature-rich calculator with history, ANS function to store answers, and animated gradient background that cycles colors every 60 seconds.</p>
+    <div class="card-tags">
+      <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+    </div>
+    <div class="card-links">
+      <a href="https://newsky1.github.io/CALCULATOR/" target="_blank" rel="noopener noreferrer" class="link-demo">
+        Live Demo
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-eyebrow">Toolkit</p>
+      <h2 class="section-heading">Technologies I use.</h2>
+    </div>
+    <div class="skills-wrap">
+      <span class="skill-pill">HTML</span>
+      <span class="skill-pill">CSS</span>
+      <span class="skill-pill">JavaScript</span>
+      <span class="skill-pill">MongoDB</span> 
+      <span class="skill-pill">Figma</span>
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">Express.js</span>
+      <span class="skill-pill">TypeScript</span>
+      <span class="skill-pill">React</span>
+      <span class="skill-pill">Next.js</span>
+      <span class="skill-pill">Node.js</span>
+      <span class="skill-pill">PostgreSQL</span>
+      <span class="skill-pill">GraphQL</span>
+      <span class="skill-pill">Docker</span>
+      <span class="skill-pill">AWS</span>
+    </div>
+  </div>
+</section>
+
+<!--EXPERIENCE-->
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-heading">
+        Let's build something<br>
+        <span class="accent">together.</span>
+      </h2>
+      <p class="contact-sub">
+        Whether you have a product idea, need a collaborator on your team, or want to discuss
+        a design challenge — my inbox is always open.
+      </p>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Alex Chen" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="_replyto" placeholder="alex@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">Send message</button>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div class="success-title">Message received!</div>
+        <div class="success-sub">I'll get back to you within 24 hours.</div>
+        <button type="button" id="resetFormBtn" class="btn-submit">Send Another Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 Shem. All rights reserved.</span>
+    <span class="footer-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </span>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function(){
+    emailjs.init("ehYBsNN8I35WWsEUS");
+  }) ();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
